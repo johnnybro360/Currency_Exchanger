@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Currency_Exchanger.MainPage">
@@ -15,7 +15,7 @@
 
         <Grid.RowDefinitions>
             <RowDefinition Height="2*"/>
-            <RowDefinition Height="*"/> 
+            <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
@@ -29,10 +29,10 @@
                HorizontalOptions="FillAndExpand" 
                VerticalOptions="End"
                x:Name="TotalLabel"/>
-        
-        
+
+
         <!-- First row -->
-        
+
         <Frame BorderColor="Black" 
                Grid.ColumnSpan="6" 
                Grid.Row="1"
@@ -55,14 +55,14 @@
                 Grid.Row="1"
                 Grid.Column="1"
                 Margin="0, 6"
-                x:Name="DollarAddButton"/>
+                x:Name="DollarAddButton" Clicked="DollarAddButton_Pressed"/>
 
         <Button Text="-"
                 FontSize="40"
                 Grid.Row="1"
                 Grid.Column="2"
                 Margin="0, 6"
-                x:Name="DollarTakeButton"/>
+                x:Name="DollarTakeButton" Clicked="DollarTakeButton_Pressed"/>
 
         <Button Text="*"
                 TextColor="Black"
@@ -77,7 +77,7 @@
                 Grid.Row="1"
                 Grid.Column="4"
                 Margin="0, 6"
-                x:Name="DollarToFiftyButton"/>
+                x:Name="DollarToFiftyButton" Clicked="DollarToFiftyButton_Pressed"/>
 
         <Label Text="$0"
                FontSize="20"
@@ -90,13 +90,13 @@
                x:Name="DollarTotalLabel"/>
 
         <!-- Second row -->
-        
+
         <Frame BorderColor="Black" 
                Grid.ColumnSpan="6" 
                Grid.Row="2"
                Margin="5"
                CornerRadius="10"/>
-        
+
         <Label Text="50c
                x0"
                FontSize="20"
@@ -113,28 +113,28 @@
                 Grid.Row="2"
                 Grid.Column="1"
                 Margin="0, 6"
-                x:Name="FiftyAddButton"/>
+                x:Name="FiftyAddButton" Clicked="FiftyAddButton_Pressed"/>
 
         <Button Text="-"
                 FontSize="40"
                 Grid.Row="2"
                 Grid.Column="2"
                 Margin="0, 6"
-                x:Name="FiftyTakeButton"/>
+                x:Name="FiftyTakeButton" Clicked="FiftyTakeButton_Pressed"/>
 
         <Button Text="^"
                 FontSize="30"
                 Grid.Row="2"
                 Grid.Column="3"
                 Margin="0, 6"
-                x:Name="FiftyToDollarButton"/>
+                x:Name="FiftyToDollarButton" Clicked="FiftyToDollarButton_Pressed"/>
 
         <Button Text="v"
                 FontSize="30"
                 Grid.Row="2"
                 Grid.Column="4"
                 Margin="0, 6"
-                x:Name="FIftyToTenButton"/>
+                x:Name="FIftyToTenButton" Clicked="FIftyToTenButton_Pressed"/>
 
         <Label Text="$0"
                FontSize="20"
@@ -153,7 +153,7 @@
                Grid.Row="3"
                Margin="5"
                CornerRadius="10"/>
-        
+
         <Label Text="10c
                x0"
                FontSize="20"
@@ -170,28 +170,28 @@
                 Grid.Row="3"
                 Grid.Column="1"
                 Margin="0, 6"
-                x:Name="TenAddButton"/>
+                x:Name="TenAddButton" Clicked="TenAddButton_Pressed"/>
 
         <Button Text="-"
                 FontSize="40"
                 Grid.Row="3"
                 Grid.Column="2"
                 Margin="0, 6"
-                x:Name="TenTakeButton"/>
+                x:Name="TenTakeButton" Clicked="TenTakeButton_Pressed"/>
 
         <Button Text="^"
                 FontSize="30"
                 Grid.Row="3"
                 Grid.Column="3"
                 Margin="0, 6"
-                x:Name="TenToFiftyButton"/>
+                x:Name="TenToFiftyButton" Clicked="TenToFiftyButton_Pressed"/>
 
         <Button Text="v"
                 FontSize="30"
                 Grid.Row="3"
                 Grid.Column="4"
                 Margin="0, 6"
-                x:Name="TenToFiveButton"/>
+                x:Name="TenToFiveButton" Clicked="TenToFiveButton_Pressed"/>
 
         <Label Text="$0"
                FontSize="20"
@@ -204,7 +204,7 @@
                x:Name="TenTotalLabel"/>
 
         <!-- Forth row -->
-        
+
         <Frame BorderColor="Black" 
                Grid.ColumnSpan="6" 
                Grid.Row="4"
@@ -227,7 +227,7 @@
                 Grid.Row="4"
                 Grid.Column="1"
                 Margin="0, 6"
-                x:Name="FiveAddButton"/>
+                x:Name="FiveAddButton" Clicked="FiveAddButton_Pressed"/>
 
         <Button Text="-"
                 FontSize="40"
@@ -241,7 +241,7 @@
                 Grid.Row="4"
                 Grid.Column="3"
                 Margin="0, 6"
-                x:Name="FiveToTenButton"/>
+                x:Name="FiveToTenButton" Clicked="FiveTakeButton_Pressed"/>
 
         <Button Text="*"
                 TextColor="Black"
@@ -259,7 +259,7 @@
                HorizontalOptions="CenterAndExpand"
                VerticalOptions="CenterAndExpand"
                Margin="0, 5"
-               x:Name="FiveTotalLabel"/>
+               x:Name="FiveTotalLabel" />
 
 
     </Grid>
