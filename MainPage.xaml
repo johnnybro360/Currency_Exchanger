@@ -28,7 +28,7 @@
                Grid.Row="0" 
                HorizontalOptions="FillAndExpand" 
                VerticalOptions="End"
-               x:Name="Total_Label"/>
+               x:Name="TotalLabel"/>
         
         
         <!-- First row -->
