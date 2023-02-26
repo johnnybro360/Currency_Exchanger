@@ -5,12 +5,12 @@
 
     <Grid Margin="30" VerticalOptions="Start">
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1.4*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="1.4*"/>
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
@@ -21,73 +21,245 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Label Text="Totoal: 3.75c" 
+        <Label Text="Total: $0" 
                HorizontalTextAlignment="Center" 
                FontSize="16" 
                Grid.ColumnSpan="6" 
                Grid.Row="0" 
                HorizontalOptions="FillAndExpand" 
-               VerticalOptions="End"/>
+               VerticalOptions="End"
+               x:Name="Total_Label"/>
+        
+        
         <!-- First row -->
+        
         <Frame BorderColor="Black" 
                Grid.ColumnSpan="6" 
                Grid.Row="1"
                Margin="5"
                CornerRadius="10"/>
 
-        <Label Text="$0
+        <Label Text="$1
                x0"
                FontSize="20"
-               HorizontalTextAlignment="End"
+               HorizontalTextAlignment="Center"
                Grid.Row="1"
                Grid.Column="0"
                HorizontalOptions="CenterAndExpand"
                VerticalOptions="CenterAndExpand"
-               Margin="5"
+               x:Name="DollarQtyLabel"
                />
 
         <Button Text="+"
                 FontSize="40"
                 Grid.Row="1"
                 Grid.Column="1"
-                Margin="5"/>
+                Margin="0, 6"
+                x:Name="DollarAddButton"/>
 
         <Button Text="-"
                 FontSize="40"
                 Grid.Row="1"
                 Grid.Column="2"
-                Margin="5"/>
+                Margin="0, 6"
+                x:Name="DollarTakeButton"/>
 
-        <Button Text="^"
+        <Button Text="*"
+                TextColor="Black"
                 FontSize="30"
                 Grid.Row="1"
                 Grid.Column="3"
-                Margin="5"/>
+                Margin="0, 6"
+                BackgroundColor="White"/>
 
         <Button Text="v"
                 FontSize="30"
                 Grid.Row="1"
                 Grid.Column="4"
-                Margin="5"/>
+                Margin="0, 6"
+                x:Name="DollarToFiftyButton"/>
 
+        <Label Text="$0"
+               FontSize="20"
+               HorizontalTextAlignment="Center"
+               Grid.Row="1"
+               Grid.Column="5"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"
+               Margin="0, 5"
+               x:Name="DollarTotalLabel"/>
 
+        <!-- Second row -->
+        
         <Frame BorderColor="Black" 
                Grid.ColumnSpan="6" 
                Grid.Row="2"
                Margin="5"
-               CornerRadius="0"/>
+               CornerRadius="10"/>
         
+        <Label Text="50c
+               x0"
+               FontSize="20"
+               HorizontalTextAlignment="Center"
+               Grid.Row="2"
+               Grid.Column="0"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"
+               Margin="0, 5"
+               x:Name="FiftyQtyLabel"/>
+
+        <Button Text="+"
+                FontSize="40"
+                Grid.Row="2"
+                Grid.Column="1"
+                Margin="0, 6"
+                x:Name="FiftyAddButton"/>
+
+        <Button Text="-"
+                FontSize="40"
+                Grid.Row="2"
+                Grid.Column="2"
+                Margin="0, 6"
+                x:Name="FiftyTakeButton"/>
+
+        <Button Text="^"
+                FontSize="30"
+                Grid.Row="2"
+                Grid.Column="3"
+                Margin="0, 6"
+                x:Name="FiftyToDollarButton"/>
+
+        <Button Text="v"
+                FontSize="30"
+                Grid.Row="2"
+                Grid.Column="4"
+                Margin="0, 6"
+                x:Name="FIftyToTenButton"/>
+
+        <Label Text="$0"
+               FontSize="20"
+               HorizontalTextAlignment="Center"
+               Grid.Row="2"
+               Grid.Column="5"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"
+               Margin="0, 5" 
+               x:Name="FiftyTotalLabel"/>
+
+        <!-- Third row -->
+
         <Frame BorderColor="Black" 
                Grid.ColumnSpan="6" 
                Grid.Row="3"
                Margin="5"
-               CornerRadius="0"/>
+               CornerRadius="10"/>
+        
+        <Label Text="10c
+               x0"
+               FontSize="20"
+               HorizontalTextAlignment="Center"
+               Grid.Row="3"
+               Grid.Column="0"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"
+               Margin="0, 5"
+               x:Name="TenQtyLabel"/>
+
+        <Button Text="+"
+                FontSize="40"
+                Grid.Row="3"
+                Grid.Column="1"
+                Margin="0, 6"
+                x:Name="TenAddButton"/>
+
+        <Button Text="-"
+                FontSize="40"
+                Grid.Row="3"
+                Grid.Column="2"
+                Margin="0, 6"
+                x:Name="TenTakeButton"/>
+
+        <Button Text="^"
+                FontSize="30"
+                Grid.Row="3"
+                Grid.Column="3"
+                Margin="0, 6"
+                x:Name="TenToFiftyButton"/>
+
+        <Button Text="v"
+                FontSize="30"
+                Grid.Row="3"
+                Grid.Column="4"
+                Margin="0, 6"
+                x:Name="TenToFiveButton"/>
+
+        <Label Text="$0"
+               FontSize="20"
+               HorizontalTextAlignment="Center"
+               Grid.Row="3"
+               Grid.Column="5"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"
+               Margin="0, 5"
+               x:Name="TenTotalLabel"/>
+
+        <!-- Forth row -->
         
         <Frame BorderColor="Black" 
                Grid.ColumnSpan="6" 
                Grid.Row="4"
                Margin="5"
-               CornerRadius="0"/>
+               CornerRadius="10"/>
+
+        <Label Text="5c
+               x0"
+               FontSize="20"
+               HorizontalTextAlignment="Center"
+               Grid.Row="4"
+               Grid.Column="0"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"
+               Margin="0, 5"
+               x:Name="FiveQtyLabel"/>
+
+        <Button Text="+"
+                FontSize="40"
+                Grid.Row="4"
+                Grid.Column="1"
+                Margin="0, 6"
+                x:Name="FiveAddButton"/>
+
+        <Button Text="-"
+                FontSize="40"
+                Grid.Row="4"
+                Grid.Column="2"
+                Margin="0, 6"
+                x:Name="FiveTakeButton"/>
+
+        <Button Text="^"
+                FontSize="30"
+                Grid.Row="4"
+                Grid.Column="3"
+                Margin="0, 6"
+                x:Name="FiveToTenButton"/>
+
+        <Button Text="*"
+                TextColor="Black"
+                FontSize="30"
+                Grid.Row="4"
+                Grid.Column="4"
+                Margin="0, 6"
+                BackgroundColor="White"/>
+
+        <Label Text="$0"
+               FontSize="20"
+               HorizontalTextAlignment="Center"
+               Grid.Row="4"
+               Grid.Column="5"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"
+               Margin="0, 5"
+               x:Name="FiveTotalLabel"/>
 
 
     </Grid>
